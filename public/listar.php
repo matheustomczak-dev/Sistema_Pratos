@@ -29,7 +29,7 @@ $usuario = mysqli_query($conexao, "SELECT * FROM usuario");
                     <th>ID</th>
                     <th>Responsavel</th>
                     <th>Nome</th>
-                    <th>Descrição</th>
+                    <th>Descricão</th>
                     <th>Preço</th>
                     <th>Categoria</th>
                 </tr>
