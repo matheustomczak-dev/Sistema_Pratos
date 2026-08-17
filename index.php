@@ -54,7 +54,7 @@ $pratos = mysqli_query($conexao, "SELECT * FROM pratos");
                     <th>categoria</th>
                     
                 </tr>
-                <?php while () { ?>
+                <?php while ( $prato = mysqli_fetch_assoc($pratos)) { ?>
                     <tr>
                         <td><?php echo $prato["Nome"] ?></td>
                         <td><?php echo $prato["Descrição"] ?></td>
