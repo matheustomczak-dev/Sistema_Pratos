@@ -39,7 +39,7 @@ $usuario = mysqli_query($conexao, "SELECT * FROM usuario");
                         <td><?php echo $usuario["responsavel"] ?></td>
                         <td><?php echo $pratos["nome"] ?></td>
                         <td><?php echo $pratos["descricao"] ?></td>
-                        <td><?php echo $pratos["preço"] ?></td>
+                        <td><?php echo $pratos["preco"] ?></td>
                         <td><?php echo $pratos["categoria"] ?></td>
 
                         <td>
