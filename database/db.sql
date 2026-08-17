@@ -9,7 +9,7 @@ CREATE TABLE usuario (
 CREATE TABLE pratos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(200) NOT NULL,
-    descicao VARCHAR(100)NOT NULL,
+    descricao VARCHAR(100)NOT NULL,
     preco FLOAT NOT NULL,
     categoria VARCHAR(200) NOT NULL
 );
