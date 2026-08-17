@@ -1,7 +1,7 @@
 <?php
 
 include "infra/conexao.php";
-$ = mysqli_query($conexao, "SELECT * FROM ");
+$pratos = mysqli_query($conexao, "SELECT * FROM pratos");
 
 ?>
 
@@ -56,13 +56,13 @@ $ = mysqli_query($conexao, "SELECT * FROM ");
                 </tr>
                 <?php while () { ?>
                     <tr>
-                        <td><?php echo $["id"] ?></td>
-                        <td><?php echo $["titulo"] ?></td>
-                        <td><?php echo $["autor"] ?></td>
-                        <td><?php echo $["ano"] ?></td>
+                        <td><?php echo $prato["Nome"] ?></td>
+                        <td><?php echo $prato["Descrição"] ?></td>
+                        <td><?php echo $prato["valor"] ?></td>
+                        <td><?php echo $prato["categoria"] ?></td>
                         <td>
-                            <a href="public/editar.php?id=<?php echo $["id"] ?>">Editar</a>
-                            <a href="public/excluir.php?id=<?php echo $["id"] ?>">Excluir</a>
+                            <a href="public/editar.php?id=<?php echo $prato["id"] ?>">Editar</a>
+                            <a href="public/excluir.php?id=<?php echo $prato["id"] ?>">Excluir</a>
                         </td>
                     </tr>
                 <?php } ?>
