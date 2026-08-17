@@ -44,30 +44,7 @@ $pratos = mysqli_query($conexao, "SELECT * FROM pratos");
             <button type="submit">Cadastrar</button>
         </form>
 
-         <div>
-            <h2>Pratos Cadastrados</h2>
-            <table>
-                <tr>
-                    <th>Nome</th>
-                    <th>Descrição</th>
-                    <th>valor</th>
-                    <th>categoria</th>
-                    
-                </tr>
-                <?php while () { ?>
-                    <tr>
-                        <td><?php echo $prato["Nome"] ?></td>
-                        <td><?php echo $prato["Descrição"] ?></td>
-                        <td><?php echo $prato["valor"] ?></td>
-                        <td><?php echo $prato["categoria"] ?></td>
-                        <td>
-                            <a href="public/editar.php?id=<?php echo $prato["id"] ?>">Editar</a>
-                            <a href="public/excluir.php?id=<?php echo $prato["id"] ?>">Excluir</a>
-                        </td>
-                    </tr>
-                <?php } ?>
-            </table>
-        </div>
+         
 
     </main>
     <footer>
