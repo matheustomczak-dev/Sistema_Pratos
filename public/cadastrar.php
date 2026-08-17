@@ -2,16 +2,23 @@
 
 include "../infra/conexao.php";
 
-$nome_usuario = $_POST["Nome_User"];
+$responsavel = $_POST["Nome_User"];
 $email = $_POST["Email"];
+
 $nome = $_POST["nome_prato"];
-$descricao = $_POST["descricao"];
+$descicao = $_POST["descricao"];
 $preco = $_POST["valor_prato"];
 $categoria = $_POST["categoria"];
 
-mysqli_query($conexao, "INSERT INTO usuario (nome, email) VALUES ('$nome_usuario', '$email')");
+$sql_usuario = "INSERT INTO usuario (responsavel, email)
+                VALUES ('$responsavel', '$email')";
 
-mysqli_query($conexao, "INSERT INTO pratos (nome, descricao, preco, categoria) VALUES ('$nome', '$descricao', '$preco', '$categoria')");
+mysqli_query($conexao, $sql_usuario);
+
+$sql_prato = "INSERT INTO pratos (nome, descicao, preco, categoria)
+              VALUES ('$nome', '$descicao', '$preco', '$categoria')";
+
+mysqli_query($conexao, $sql_prato);
 
 header("Location: ../index.php");
 

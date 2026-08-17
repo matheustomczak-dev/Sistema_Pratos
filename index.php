@@ -37,8 +37,8 @@ $pratos = mysqli_query($conexao, "SELECT * FROM pratos");
             <label for="valor_prato"> Valor do Prato  </label>
             <input type="number" name="valor_prato">
             <br>
-            <label for="categoria"> Categoria do Prato </label>
-            <input type="text" name="nome_prato">
+            <label for="categoria">Categoria do Prato</label>
+            <input type="text" name="categoria">
             <br>
             
             <button type="submit">Cadastrar</button>
