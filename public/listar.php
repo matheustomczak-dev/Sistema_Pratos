@@ -1,6 +1,7 @@
 <?php
 include "../infra/conexao.php";
-$query_pratos = mysqli_query($conexao, "SELECT * FROM pratos");
+$query_pratos = mysqli_query($conexao, "SELECT * FROM pratos"); 
+$query_usuario = mysqli_query($conexao, "SELECT * FROM usuario");
 ?>
 
 <!DOCTYPE html>
