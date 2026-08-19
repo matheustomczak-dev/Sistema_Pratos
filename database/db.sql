@@ -8,15 +8,13 @@ CREATE TABLE usuario (
     email VARCHAR(200) NOT NULL
 );
 
-
 CREATE TABLE pratos (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    usuario_id INT NOT NULL,
+    usuario_responsavel VARCHAR(200) NOT NULL,
     nome VARCHAR(200) NOT NULL,
     descricao VARCHAR(100) NOT NULL,
     preco DECIMAL(10,2) NOT NULL, 
     categoria VARCHAR(200) NOT NULL,
     
-    
-    FOREIGN KEY (usuario_id) REFERENCES usuario(id) ON DELETE CASCADE
+    FOREIGN KEY (usuario_responsavel) REFERENCES usuario(responsavel)
 );

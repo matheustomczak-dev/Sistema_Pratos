@@ -20,7 +20,7 @@ $pratos = mysqli_query($conexao, "SELECT * FROM pratos");
         <h1>CRUD - Sistema Pratos</h1>
     </header>
     <main>
-        <h2>Cadastro De Usuario </h2>
+        <h2>Cadastro de Pratos </h2>
         <form action="public/cadastrar.php" method="POST">
             <label for="Nome_User">Nome do Usuario:</label>
             <input type="text" name="Nome_User" require>
