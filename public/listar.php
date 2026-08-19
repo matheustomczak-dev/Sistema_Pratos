@@ -37,7 +37,7 @@ $query_usuario = mysqli_query($conexao, "SELECT * FROM usuario");
                     <tr>
                         <td><?php echo $prato["id"]; ?></td>
                         
-                        <!-- Exemplo buscando o usuário/responsável associado se houver relacionamento -->
+                        
                         <td><?php echo $prato["responsavel"] ?? 'N/A'; ?></td>
                         
                         <td><?php echo $prato["nome"]; ?></td>

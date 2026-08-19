@@ -1,7 +1,7 @@
 <?php
 
 include "infra/conexao.php";
-$pratos = mysqli_query($conexao, "SELECT * FROM pratos");
+$pratos = mysqli_query($conexao, "SELECT * FROM usuario");
 
 ?>
 
@@ -20,33 +20,19 @@ $pratos = mysqli_query($conexao, "SELECT * FROM pratos");
         <h1>CRUD - Sistema Pratos</h1>
     </header>
     <main>
-        <h2>Cadastro de Pratos </h2>
-        <form action="public/cadastrar.php" method="POST">
-            <label for="Nome_User">Nome do Usuario:</label>
+        <h2>Cadastro de Usuario </h2>
+        <form action="public/cadastro_usuario.php" method="POST">
+            <label for="Nome_User">Nome do Usuario: <br></label>
             <input type="text" name="Nome_User" require>
             <br>
-            <label for="Email">Email</label>
-            <input type="text" name="Email" required>
-            <br>
-            <label for="nome_prato"> Nome do Prato </label>
-            <input type="text" name="nome_prato" required>
-            <br>
-            <label for="descricao"> Descrição do prato </label>
-            <input type="text" name="descricao" required>
-            <br>
-            <label for="valor_prato"> Valor do Prato  </label>
-            <input type="number" name="valor_prato" required>
-            <br>
-            <label for="categoria">Categoria do Prato</label>
-            <input type="text" name="categoria" required>
+            <label for="Email">Email <br></label>
+            <input type="email" name="Email" required>
             <br>
             
             <button type="submit">Cadastrar</button>   
         </form>   
         
         <br>
-
-        <a href="public/listar.php"><button type="submit">Listar</button></a>
 
     </main>
     <footer>
