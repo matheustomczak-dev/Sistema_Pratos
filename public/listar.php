@@ -36,7 +36,13 @@ $usuario = mysqli_query($conexao, "SELECT * FROM usuario");
                 <?php while ($pratos = mysqli_fetch_assoc($pratos)) { ?>
                     <tr>
                         <td><?php echo $pratos["id"] ?></td>
+                
+
+                <?php while ($pratos = mysqli_fetch_assoc($usuario)) { ?>
                         <td><?php echo $usuario["responsavel"] ?></td>
+                 <?php } ?>
+
+                 
                         <td><?php echo $pratos["nome"] ?></td>
                         <td><?php echo $pratos["descricao"] ?></td>
                         <td><?php echo $pratos["preco"] ?></td>

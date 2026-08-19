@@ -41,10 +41,12 @@ $pratos = mysqli_query($conexao, "SELECT * FROM pratos");
             <input type="text" name="categoria">
             <br>
             
-            <button type="submit">Cadastrar</button>  <button type="submit">Listar</button> 
-        </form>
+            <button type="submit">Cadastrar</button>   
+        </form>   
+        
+        <br>
 
-         
+        <a href="public/listar.php"><button type="submit">Listar</button></a>
 
     </main>
     <footer>
