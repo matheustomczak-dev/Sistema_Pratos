@@ -26,19 +26,19 @@ $pratos = mysqli_query($conexao, "SELECT * FROM pratos");
             <input type="text" name="Nome_User" require>
             <br>
             <label for="Email">Email</label>
-            <input type="text" name="Email" require>
+            <input type="text" name="Email" required>
             <br>
             <label for="nome_prato"> Nome do Prato </label>
-            <input type="text" name="nome_prato" require>
+            <input type="text" name="nome_prato" required>
             <br>
             <label for="descricao"> Descrição do prato </label>
-            <input type="text" name="descricao" require>
+            <input type="text" name="descricao" required>
             <br>
             <label for="valor_prato"> Valor do Prato  </label>
-            <input type="number" name="valor_prato" require>
+            <input type="number" name="valor_prato" required>
             <br>
             <label for="categoria">Categoria do Prato</label>
-            <input type="text" name="categoria" require>
+            <input type="text" name="categoria" required>
             <br>
             
             <button type="submit">Cadastrar</button>  <button type="submit">Listar</button> 
